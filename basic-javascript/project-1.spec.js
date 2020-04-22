@@ -100,4 +100,16 @@ describe("project-1", () => {
       expect(helpers.getRemainder(100, 9)).toBe(1);
     });
   });
+  describe("isEven()", () => {
+    it("returns true if arg is even", () => {
+      expect(helpers.isEven(10)).toBe(true);
+      expect(helpers.isEven(4)).toBe(true);
+      expect(helpers.isEven(512)).toBe(true);
+    });
+    it("returns false if arg isn't even", () => {
+      expect(helpers.isEven(11)).toBe(false);
+      expect(helpers.isEven(1)).toBe(false);
+      expect(helpers.isEven(512.1)).toBe(false);
+    });
+  });
 });
