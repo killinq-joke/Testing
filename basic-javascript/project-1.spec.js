@@ -166,4 +166,11 @@ describe("project-1", () => {
       expect(helpers.addExclamationPoint("stop")).toBe("stop!");
     });
   });
+  describe("combineNames()", () => {
+    it("returns the firstname & lastname", () => {
+      expect(helpers.combineNames("zak", "touzri")).toBe("zak touzri");
+      expect(helpers.combineNames("sam", "ovens")).toBe("sam ovens");
+      expect(helpers.combineNames("nathan", "drake")).toBe("nathan drake");
+    });
+  });
 });
