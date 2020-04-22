@@ -79,4 +79,11 @@ describe("project-1", () => {
       expect(helpers.subtract(511, 9)).toBe(502);
     });
   });
+  describe("divide()", () => {
+    it("returns the division of two args", () => {
+      expect(helpers.divide(10, 2)).toBe(5);
+      expect(helpers.divide(4, -10)).toBe(-0.4);
+      expect(helpers.divide(100, 1)).toBe(100);
+    });
+  });
 });
