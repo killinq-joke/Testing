@@ -131,4 +131,11 @@ describe("project-1", () => {
       expect(helpers.square(100)).toBe(10000);
     });
   });
+  describe("cube()", () => {
+    it("returns arg cubed", () => {
+      expect(helpers.cube(10)).toBe(1000);
+      expect(helpers.cube(4)).toBe(64);
+      expect(helpers.cube(100)).toBe(1000000);
+    });
+  });
 });
