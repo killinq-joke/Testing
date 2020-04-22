@@ -132,10 +132,17 @@ describe("project-1", () => {
     });
   });
   describe("cube()", () => {
-    it("returns arg cubed", () => {
+    it("returns num cubed", () => {
       expect(helpers.cube(10)).toBe(1000);
       expect(helpers.cube(4)).toBe(64);
       expect(helpers.cube(100)).toBe(1000000);
+    });
+  });
+  describe("raiseToPower()", () => {
+    it("returns num raised to exponent", () => {
+      expect(helpers.raiseToPower(10, 2)).toBe(100);
+      expect(helpers.raiseToPower(4, 4)).toBe(256);
+      expect(helpers.raiseToPower(0, 0)).toBe(1);
     });
   });
 });
