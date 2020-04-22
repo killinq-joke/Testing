@@ -87,10 +87,17 @@ describe("project-1", () => {
     });
   });
   describe("multiply()", () => {
-    it("returns the division of two args", () => {
+    it("returns the product of two args", () => {
       expect(helpers.multiply(10, 2)).toBe(20);
       expect(helpers.multiply(4, -10)).toBe(-40);
       expect(helpers.multiply(100, 1)).toBe(100);
+    });
+  });
+  describe("getRemainder()", () => {
+    it("returns the remainder of two args", () => {
+      expect(helpers.getRemainder(10, 2)).toBe(0);
+      expect(helpers.getRemainder(4, -10)).toBe(4);
+      expect(helpers.getRemainder(100, 9)).toBe(1);
     });
   });
 });
