@@ -1,10 +1,10 @@
 /* eslint-disable arrow-parens */
 
-const multiplyByTen = num => {
+const multiplyByTen = (num) => {
   return num * 10;
 };
 
-const subtractFive = num => {
+const subtractFive = (num) => {
   return num - 5;
 };
 
@@ -16,14 +16,14 @@ const areEqual = (x, y) => {
   return x === y;
 };
 
-const lessThanNinety = num => {
+const lessThanNinety = (num) => {
   if (num < 90) {
     return true;
   }
   return false;
 };
 
-const greaterThanFifty = num => {
+const greaterThanFifty = (num) => {
   if (num > 50) {
     return true;
   }
@@ -50,25 +50,25 @@ const getRemainder = (x, y) => {
   return x % y;
 };
 
-const isEven = num => {
+const isEven = (num) => {
   if (num % 2 === 0) {
     return true;
   }
   return false;
 };
 
-const isOdd = num => {
+const isOdd = (num) => {
   if (num % 2 === 0) {
     return false;
   }
   return true;
 };
 
-const square = num => {
+const square = (num) => {
   return num * num;
 };
 
-const cube = num => {
+const cube = (num) => {
   return num * num * num;
 };
 
@@ -76,23 +76,23 @@ const raiseToPower = (num, exponent) => {
   return num ** exponent;
 };
 
-const roundNumber = num => {
+const roundNumber = (num) => {
   return Math.round(num);
 };
 
-const roundUp = num => {
+const roundUp = (num) => {
   return Math.ceil(num);
 };
 
-const addExclamationPoint = str => {
-  return (str += '!');
+const addExclamationPoint = (str) => {
+  return (str += "!");
 };
 
 const combineNames = (firstName, lastName) => {
   return `${firstName} ${lastName}`;
 };
 
-const getGreeting = name => {
+const getGreeting = (name) => {
   return `Hello ${name}!`;
 };
 
@@ -104,7 +104,7 @@ const getTriangleArea = (base, height) => {
   return 0.5 * base * height;
 };
 
-const getCircleArea = radius => {
+const getCircleArea = (radius) => {
   return Math.PI * radius * radius;
 };
 
@@ -137,5 +137,5 @@ module.exports = {
   getRectangleArea,
   getTriangleArea,
   getCircleArea,
-  getRectangularPrismVolume
+  getRectangularPrismVolume,
 };

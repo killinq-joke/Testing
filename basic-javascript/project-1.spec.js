@@ -201,4 +201,13 @@ describe("project-1", () => {
       expect(helpers.getCircleArea(442.1)).toBe(614031.8553824202);
     });
   });
+  describe("getRectangularPrismVolume()", () => {
+    it("returns the volume of the rectangular prism", () => {
+      expect(helpers.getRectangularPrismVolume(3, 3, 7)).toBe(63);
+      expect(helpers.getRectangularPrismVolume(10, 10, 10)).toBe(1000);
+      expect(helpers.getRectangularPrismVolume(442.1, 201.6, 2)).toBe(
+        178254.72
+      );
+    });
+  });
 });
