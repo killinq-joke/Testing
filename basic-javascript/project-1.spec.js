@@ -180,4 +180,11 @@ describe("project-1", () => {
       expect(helpers.getGreeting("nathan")).toBe("Hello nathan!");
     });
   });
+  describe("getRectangleArea()", () => {
+    it("returns the product of length & width", () => {
+      expect(helpers.getRectangleArea(1, 2)).toBe(2);
+      expect(helpers.getRectangleArea(5, 5)).toBe(25);
+      expect(helpers.getRectangleArea(20, 20)).toBe(400);
+    });
+  });
 });
