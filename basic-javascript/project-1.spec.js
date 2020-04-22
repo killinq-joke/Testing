@@ -124,5 +124,11 @@ describe("project-1", () => {
       expect(helpers.isOdd(512)).toBe(false);
     });
   });
-  
+  describe("square()", () => {
+    it("returns arg squared", () => {
+      expect(helpers.square(10)).toBe(100);
+      expect(helpers.square(4)).toBe(16);
+      expect(helpers.square(100)).toBe(10000);
+    });
+  });
 });
