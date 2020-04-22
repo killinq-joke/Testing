@@ -86,4 +86,11 @@ describe("project-1", () => {
       expect(helpers.divide(100, 1)).toBe(100);
     });
   });
+  describe("multiply()", () => {
+    it("returns the division of two args", () => {
+      expect(helpers.multiply(10, 2)).toBe(20);
+      expect(helpers.multiply(4, -10)).toBe(-40);
+      expect(helpers.multiply(100, 1)).toBe(100);
+    });
+  });
 });
