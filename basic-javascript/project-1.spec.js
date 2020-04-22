@@ -173,4 +173,11 @@ describe("project-1", () => {
       expect(helpers.combineNames("nathan", "drake")).toBe("nathan drake");
     });
   });
+  describe("getGreeting()", () => {
+    it("returns a string containing hello followed by name", () => {
+      expect(helpers.getGreeting("zak")).toBe("Hello zak!");
+      expect(helpers.getGreeting("sam")).toBe("Hello sam!");
+      expect(helpers.getGreeting("nathan")).toBe("Hello nathan!");
+    });
+  });
 });
