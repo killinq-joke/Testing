@@ -145,4 +145,11 @@ describe("project-1", () => {
       expect(helpers.raiseToPower(0, 0)).toBe(1);
     });
   });
+  describe("roundNumber()", () => {
+    it("returns num rounded up", () => {
+      expect(helpers.roundNumber(10.5)).toBe(11);
+      expect(helpers.roundNumber(4.1)).toBe(4);
+      expect(helpers.roundNumber(0.49999)).toBe(0);
+    });
+  });
 });
