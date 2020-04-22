@@ -112,4 +112,17 @@ describe("project-1", () => {
       expect(helpers.isEven(512.1)).toBe(false);
     });
   });
+  describe("isOdd()", () => {
+    it("returns true if arg is odd", () => {
+      expect(helpers.isOdd(11)).toBe(true);
+      expect(helpers.isOdd(5)).toBe(true);
+      expect(helpers.isOdd(513)).toBe(true);
+    });
+    it("returns false if arg is even", () => {
+      expect(helpers.isOdd(10)).toBe(false);
+      expect(helpers.isOdd(4)).toBe(false);
+      expect(helpers.isOdd(512)).toBe(false);
+    });
+  });
+  
 });
