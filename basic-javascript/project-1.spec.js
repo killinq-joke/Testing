@@ -187,4 +187,18 @@ describe("project-1", () => {
       expect(helpers.getRectangleArea(20, 20)).toBe(400);
     });
   });
+  describe("getTriangleArea()", () => {
+    it("returns the product of base & height divided by 2", () => {
+      expect(helpers.getTriangleArea(1, 2)).toBe(1);
+      expect(helpers.getTriangleArea(5, 5)).toBe(12.5);
+      expect(helpers.getTriangleArea(20, 20)).toBe(200);
+    });
+  });
+  describe("getCircleArea()", () => {
+    it("returns the circle area by radius", () => {
+      expect(helpers.getCircleArea(3)).toBe(28.274333882308138);
+      expect(helpers.getCircleArea(10)).toBe(314.1592653589793);
+      expect(helpers.getCircleArea(442.1)).toBe(614031.8553824202);
+    });
+  });
 });
