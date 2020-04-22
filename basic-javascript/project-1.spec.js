@@ -159,4 +159,11 @@ describe("project-1", () => {
       expect(helpers.roundUp(0.49999)).toBe(1);
     });
   });
+  describe("addExclamationPoint()", () => {
+    it("returns the str with ! at the end", () => {
+      expect(helpers.addExclamationPoint("hello")).toBe("hello!");
+      expect(helpers.addExclamationPoint("brotha")).toBe("brotha!");
+      expect(helpers.addExclamationPoint("stop")).toBe("stop!");
+    });
+  });
 });
